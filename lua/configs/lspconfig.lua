@@ -46,8 +46,10 @@ lspconfig.yamlls.setup {
 -- helm
 lspconfig.helm_ls.setup {
   settings = {
-    yamlls = {
-      path = "yaml-language-server",
+    ["helm-ls"] = {
+      yamlls = {
+        path = "yaml-language-server",
+      },
     },
   },
   on_attach = on_attach,
